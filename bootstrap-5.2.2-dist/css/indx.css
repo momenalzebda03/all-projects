@@ -1,0 +1,89 @@
+:root {
+    --color_red: red;
+}
+
+body {
+    text-transform: capitalize;
+}
+
+/* start header */
+
+.div_center {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.div_center h1 {
+    font-size: 60px;
+}
+
+.div_center h1 span {
+    color: var(--color_red);
+}
+
+.div_center .button {
+    width: 250px;
+    font-weight: bold;
+    margin-top: 28px;
+    background-color: var(--color_red);
+}
+
+.div_center .button:hover {
+    background-color: black;
+}
+
+/* end header */
+/* start contener */
+.div_conter {
+    background-color: var(--color_red);
+    margin-top: 20px;
+    padding-top: 0.5%;
+    padding-bottom: 0.1%;
+    text-align: center;
+}
+
+.div_conter p {
+    font-weight: bold;
+    color: white;
+}
+
+.container .row div {
+    margin-top: 60px;
+}
+
+.container .row div .div_image {
+    position: relative;
+    overflow: hidden;
+    border: 6px solid orange;
+    height: 300px;
+}
+
+.container .row div .div_image a img {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.container .row div .div_image a img:hover {
+    cursor: pointer;
+    width: 125%;
+    height: 125%;
+    margin-left: -6.5%;
+    margin-top: -7%;
+    transform: rotate(10deg);
+}
+
+/* end contener */
+/* start media */
+
+@media (max-width: 800px) and (min-width: 0px) {
+    .div_center h1 {
+        font-size: 35px;
+    }
+
+    .div_center .button {
+        width: 150px;
+    }
+}
+
+/* end media */
